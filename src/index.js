@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 function Square(props) {
@@ -39,6 +39,9 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
+  /*const [history,setHistory] = useState(history.concat([{
+    squares: squares
+  }]);*/
   constructor(props) {
     super(props);
     this.state = {
